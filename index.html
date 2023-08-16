@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraria Bosses</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="src/img/logo.png" alt="Logo" class="logo">
+        <button id="mode-change-btn">
+            <img src="src/img/hardmode.png" alt="hardmode">
+        </button>
+    </header>
+    <main class="boss-select-list">
+        <section class="bosses">
+            <h1 class="title">Selecione o Boss</h1>
+            <div id="pre-hardmode">
+                <ul class="boss-list">
+                    <li class="boss selected" id="slime-king"  data-name="Slime King"
+                    data-description="Slimes normalmente não são inteligentes, mas ocasionalmente eles se fundem para se tornar uma força poderosa para engolir todas as coisas." data-img="./src/img/slime-king.png">
+                        <img src="src/img/card-slime-king.png" alt="Slime King">
+                    </li>
+                    <li class="boss" id="eye-cthulhu" data-name="Eye of Cthulhu"
+                    data-description="Um pedaço de Cthulhu que foi arrancado de seu corpo há séculos em uma guerra sangrenta. Ele anda pelo noite em busca de seu corpo... e de vingança!" data-img="./src/img/eye-cthulhu.png">
+                        <img src="src/img/card-eye-cthulhu.png" alt="Eye of Cthulhu">
+                    </li>
+                    <li class="boss" id="brain-cthulhu" data-name="Brain of Cthulhu"
+                    data-description="Um pedaço de Cthulhu dilacerado, este vil mentor pulsa em agonia e ajuda o Crimson em uma tentativa de vingar seu mestre." data-img="./src/img/brain-cthulhu.png">
+                        <img src="src/img/card-brain-cthulhu.png" alt="Brain of Cthulhu">
+                    </li>
+                    <li class="boss" id="eater-worlds" data-name="Eater of the Worlds"
+                    data-description="Concebido a partir da malícia sem fundo da Corrupção, este poderoso verme abissal escava túneis descontroladamente para devorar tudo em seu caminho." data-img="./src/img/eater-world.png">
+                        <img src="src/img/card-eater-world.png" alt="Eater of the Worlds">
+                    </li>
+                    <li class="boss" id="queen-bee" data-name="Queen bee"
+                    data-description="Essa monstruosidade altamente agressiva responde violentamente quando sua larva é perturbada; as colmeias carregadas de mel são seu território." data-img="./src/img/queen-bee.png">
+                        <img src="src/img/card-queen-bee.png" alt="Queen bee">
+                    </li>
+                    <li class="boss" id="skeletron" data-name="Skeletron"
+                    data-description="The disembodied bones of a former tyrant pulsed with a hatred so strong, it left behind a mighty curse which guards the Dungeon." data-img="./src/img/skeletron.png">
+                        <img src="src/img/card-skeletron.png" alt="Skeletron">
+                    </li>
+                    <li class="boss" id="deerclops" data-name="Deerclops"
+                    data-description="Vindo de uma terra distante, esta monstruosidade ciclópica espreita em lugares frios, causando estragos naqueles que a perturbam." data-img="./src/img/deerclops.png">
+                        <img src="src/img/card-deerclops.png" alt="Deerclops">
+                    </li>
+                    <li class="boss" id="wall-flesh" data-name="Wall of Flesh"
+                    data-description="Servindo como o núcleo e guardião do mundo, o imponente lorde demônio existe para manter os poderosos espíritos antigos selados." data-img="./src/img/wall-of-flesh.png">
+                        <img src="src/img/card-wall-of-flesh.png" alt="Wall of Flesh">
+                    </li>
+                </ul>
+            </div>
+            <div class="hide" id="hardmode">
+                <ul class="boss-list hide">
+                    <li class="boss selected" id="slime-queen"  data-name="Slime Queen"
+                    data-description="Slimes consagrados consolidados em uma força altiva e esmagadora adornada com cristais deslumbrantes. Dizem que ela cria asas." data-img="./src/img/slime-queen.png">
+                        <img src="src/img/card-slime-queen.png" alt="Slime Queen">
+                    </li>
+                    <li class="boss" id="destroyer" data-name="destroyer"
+                    data-description="Um simulacro mecânico da espinha de Cthulhu decorado com sondas armadas a laser, que se desprendem de seu corpo quando danificadas." data-img="./src/img/destroyer.png">
+                        <img src="src/img/card-destroyer.png" alt="destroyer">
+                    </li>
+                    <li class="boss" id="twins" data-name="The Twins"
+                    data-description="Pertencente a um par de Olhos de Cthulhu recriados mecanicamente, um deles concentra sua energia em disparar lasers poderosos e o outro persegue em alta velocidade, exalando chamas amaldiçoadas." data-img="./src/img/twins.png">
+                        <img src="src/img/card-twins.png" alt="The Twins">
+                    </li>
+                    <li class="boss" id="skeletron-prime" data-name="Skeletron Prime"
+                    data-description="Reconstruído mecanicamente para reviver Cthulhu, este Skeletron tem mais braços do que nunca e uma variedade de armas ferozes." data-img="./src/img/skeletron-prime.png">
+                        <img src="src/img/card-skeletron-prime.png" alt="Skeletron Prime">
+                    </li>
+                    <li class="boss" id="plantera" data-name="plantera"
+                    data-description="Um guardião floral adormecido, mas poderoso, acordado pelas consequências das maquinações destruídas de Cthulhu. Seu alcance abrange toda a selva." data-img="./src/img/plantera.png">
+                        <img src="src/img/card-plantera.png" alt="plantera">
+                    </li>
+                    <li class="boss" id="golem" data-name="golem"
+                    data-description="Uma notável exibição de engenhosidade construída pelo clã Lihzahrd. Alimentado por células de energia solar, está pronto para guardar o Templo." data-img="./src/img/golem.png">
+                        <img src="src/img/card-golem.png" alt="golem">
+                    </li>
+                    <li class="boss" id="duke-fish" data-name="duke fishron"
+                    data-description="Uma mutação pigron aquática das profundezas do oceano que surge em busca de um tipo raro e saboroso de verme." data-img="./src/img/duke-fish.png">
+                        <img src="src/img/card-duke-fish.png" alt="duke fishron">
+                    </li>
+                    <li class="boss" id="empress-light" data-name="empress of light"
+                    data-description="Sob o cobertor de limpeza do Hallow, encontra-se uma vingativa deusa fae empenhada em limpar a terra de toda e qualquer impureza." data-img="./src/img/empress-light.png">
+                        <img src="src/img/card-empress-light.png" alt="empress of light">
+                    </li>
+                    <li class="boss" id="lunatic-cultist" data-name="lunatic cultist"
+                    data-description="Um líder fanático empenhado em trazer o apocalipse revivendo o grande Cthulhu por meio de esquemas nos bastidores." data-img="./src/img/lunatic-cultist.png">
+                        <img src="src/img/card-lunatic-cultist.png" alt="lunatic cultist">
+                    </li>
+                    <li class="boss" id="moon-lord" data-name="moon lord"
+                    data-description="O cérebro por trás de todos os terrores que acontecem no mundo, libertado de sua prisão lunar. Praticamente um deus, seu poder não conhece limites." data-img="./src/img/moon-lord.png">
+                        <img src="src/img/card-moon-lord.png" alt="moon lord">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="select-boss">
+            <img src="src/img/slime-king.png" alt="Boss selecionado" class="boss-img">
+            <div class="boss-content">
+                <h2 class="boss-name">Slime King</h2>
+                <p class="boss-description">Slimes normalmente não são inteligentes, mas ocasionalmente eles se fundem para se tornar uma força poderosa para engolir todas as coisas.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./src/scripts/app.js"></script>
+</body>
+</html>

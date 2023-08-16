@@ -1,0 +1,38 @@
+@media (max-width: 1120px){
+    .header .logo{
+        max-width: 190px;
+    }
+
+    .boss-select-list{
+        flex-direction: column-reverse;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .boss-select-list .bosses{
+        margin-top: 37px;
+    }
+
+    .bosses .title{
+        font-size: 15px;
+    }
+
+    .bosses .boss-list{
+        gap: 9px;
+    }
+
+    .bosses .boss img{
+        width: 80px;
+    }
+
+    .select-boss .boss-img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .select-boss .boss-description{
+        width: 80%;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+}
