@@ -1,4 +1,8 @@
 @media (max-width: 1120px){
+    body::before{
+        height: 165%;
+    }
+
     .header .logo{
         max-width: 190px;
     }
